@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-header',
   template: `
-      <nav class="navbar is-dark">
+      <nav class="navbar is-fixed-top">
           <!-- logo -->
           <div class="navbar-brand">
               <a class="navbar-item">
@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 
           <!-- menu -->
           <div class="navbar-menu">
-              <div class="navbar-start">
+              <div class="navbar-end">
                   <a class="navbar-item" routerLink="">Home</a>
                   <a class="navbar-item" routerLink="blog">Blog</a>
               </div>
