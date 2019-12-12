@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-blog',
   template: `
-      <section class="hero is-warning is-fullheight is-bold">
+      <section class="hero is-fullheight is-bold">
           <div class="hero-body">
               <div class="container">
                   <h1 class="title">Blog page works!</h1>
