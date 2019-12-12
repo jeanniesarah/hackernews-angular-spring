@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
       <nav class="navbar is-fixed-top">
           <!-- logo -->
           <div class="navbar-brand">
-              <a class="navbar-item">
+              <a class="navbar-item" routerLink="">
                   <img src="assets/img/angular-logo.png">
               </a>
           </div>

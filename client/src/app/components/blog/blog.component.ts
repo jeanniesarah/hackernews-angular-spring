@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
       <section class="hero is-fullheight is-bold">
           <div class="hero-body">
               <div class="container">
-                  <h1 class="title">Blog page works!</h1>
+                  <h1 class="large-title">Blog page works</h1>
               </div>
           </div>
       </section>
