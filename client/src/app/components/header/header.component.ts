@@ -16,6 +16,7 @@ import { Component, OnInit } from '@angular/core';
               <div class="navbar-end">
                   <!--<a class="navbar-item" routerLink="">home</a>-->
                   <a class="navbar-item" routerLink="blog">blog</a>
+                  <a class="navbar-item" routerLink="login">login</a>
               </div>
           </div>
       </nav>
