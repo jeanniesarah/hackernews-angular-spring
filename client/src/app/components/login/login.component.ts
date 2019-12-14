@@ -31,7 +31,7 @@ import { Component, OnInit } from '@angular/core';
                       </div>
 
                       <button type="submit" class="button is-danger is-medium">login</button>
-                      <p class="help" routerLink="forgot">forgot your password?</p>
+                      <a class="navbar-item forgot-password" routerLink="forgot">forgot your password?</a>
                                          
                   </form>
               <br>

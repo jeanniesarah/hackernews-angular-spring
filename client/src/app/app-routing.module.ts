@@ -20,7 +20,7 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path: 'forgot',
+    path: 'login/forgot',
     component: ForgotComponent
   }
 ];
