@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from "@angular/forms";
+import { ForgotComponent } from './components/forgot/forgot.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from "@angular/forms";
     FooterComponent,
     HomeComponent,
     BlogComponent,
-    LoginComponent
+    LoginComponent,
+    ForgotComponent
   ],
   imports: [
     BrowserModule,

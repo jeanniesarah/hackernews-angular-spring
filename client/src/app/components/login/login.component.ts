@@ -31,7 +31,7 @@ import { Component, OnInit } from '@angular/core';
                       </div>
 
                       <button type="submit" class="button is-danger is-medium">login</button>
-                      <p class="help" routerLink="">forgot your password?</p>
+                      <p class="help" routerLink="forgot">forgot your password?</p>
                                          
                   </form>
               <br>
@@ -93,7 +93,7 @@ export class LoginComponent implements OnInit {
    * Only alerting for now
    */
   processForm() {
-    const allInfo = `My name is ${this.username}. My email is ${this.email}. My email is ${this.password}`;
+    const allInfo = `My name is ${this.username}. My email is ${this.email}. My password is ${this.password}`;
     alert(allInfo);
   }
 }
