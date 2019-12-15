@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ask',
   template: `
+    <body>
       <section class="hero is-fullheight is-bold">
           <div class="hero-body">
               <div class="container">
@@ -10,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
               </div>
           </div>
       </section>
+    </body>
   `,
   styles: []
 })
