@@ -13,6 +13,8 @@ import { BlogComponent } from './components/blog/blog.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from "@angular/forms";
 import { ForgotComponent } from './components/forgot/forgot.component';
+import { AskComponent } from './components/ask/ask.component';
+import { NewComponent } from './components/new/new.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ForgotComponent } from './components/forgot/forgot.component';
     HomeComponent,
     BlogComponent,
     LoginComponent,
-    ForgotComponent
+    ForgotComponent,
+    AskComponent,
+    NewComponent
   ],
   imports: [
     BrowserModule,

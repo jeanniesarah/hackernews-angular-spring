@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  template: `
+  template: `  
+    <!-- fixed menu -->
       <nav class="navbar is-fixed-top">
           <!-- logo -->
           <div class="navbar-brand">
@@ -11,11 +12,18 @@ import { Component, OnInit } from '@angular/core';
               </a>
           </div>
 
-          <!-- menu -->
+          <!-- left menu -->
+          <div class="navbar-menu">
+              <div class="navbar">
+                  <a class="navbar-item" routerLink="new">new</a>
+                  <a class="navbar-item" routerLink="ask">ask</a>
+                  <a class="navbar-item" routerLink="blog">blog</a>
+              </div>
+          </div>
+
+          <!-- right menu -->
           <div class="navbar-menu">
               <div class="navbar-end">
-                  <!--<a class="navbar-item" routerLink="">home</a>-->
-                  <a class="navbar-item" routerLink="blog">blog</a>
                   <a class="navbar-item" routerLink="login">login</a>
               </div>
           </div>
