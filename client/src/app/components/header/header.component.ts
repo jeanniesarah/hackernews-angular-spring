@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <div id="wrapper">
          <!-- logo + menu -->
-          <div class="navbar-menu">
+          <div class="navbar">
               <a class="navbar-item" routerLink="">
                   <img src="assets/img/angular-logo.png">
               </a>
