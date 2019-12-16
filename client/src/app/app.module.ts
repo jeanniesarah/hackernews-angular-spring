@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule }    from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +17,7 @@ import { AskComponent } from './components/ask/ask.component';
 import { NewComponent } from './components/new/new.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { ItemComponent } from './components/item/item.component';
+import { NewsApiService } from "./news-api.service";
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { ItemComponent } from './components/item/item.component';
     FontAwesomeModule,
     FormsModule
   ],
-  providers: [],
+  providers: [NewsApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
