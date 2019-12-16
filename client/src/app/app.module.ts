@@ -18,6 +18,8 @@ import { NewComponent } from './components/new/new.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { ItemComponent } from './components/item/item.component';
 import { NewsApiService } from "./news-api.service";
+import { MomentModule } from 'ngx-moment';
+import { DomainPipe } from './domain.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { NewsApiService } from "./news-api.service";
     AskComponent,
     NewComponent,
     StoriesComponent,
-    ItemComponent
+    ItemComponent,
+    DomainPipe,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { NewsApiService } from "./news-api.service";
     BrowserAnimationsModule,
     AngularMaterialModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    MomentModule,
   ],
   providers: [NewsApiService],
   bootstrap: [AppComponent]
