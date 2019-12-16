@@ -3,7 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-blog',
   template: `
-    <app-stories></app-stories>
+    <app-header></app-header>
+
+    <app-footer></app-footer>
     `,
   styles: []
 })

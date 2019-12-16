@@ -1,7 +1,7 @@
 $mobile-only: "only screen and (max-width : 768px)";
 
 a {
-  color: #b92b27;
+  color: #d70202;
   text-decoration: none;
   font-weight: bold;
 
@@ -71,7 +71,7 @@ ol {
 
   a {
     @media #{$mobile-only} {
-      color: #B92B27;
+      color:  #d70202;
       text-decoration: none;
     }
   }
@@ -105,18 +105,18 @@ ol {
 
   @media #{$mobile-only} {
     padding: 60px 15px 25px 15px;
-    border-bottom: 2px dotted #b92b27;
+    border-bottom: 2px dotted  #d70202;
   }
 }
 
 .loader {
-  background: #B92B27;
+  background: #d70202;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
   &:before, &:after {
-    background: #B92B27;
+    background:  #d70202;
     -webkit-animation: load1 1s infinite ease-in-out;
     animation: load1 1s infinite ease-in-out;
     width: 1em;
@@ -146,7 +146,7 @@ ol {
 }
 
 .loader {
-  color: #B92B27;
+  color:  #d70202;
   text-indent: -9999em;
   margin: 20px 20px;
   position: relative;
