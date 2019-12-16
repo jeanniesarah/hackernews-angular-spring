@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +15,8 @@ import { FormsModule } from "@angular/forms";
 import { ForgotComponent } from './components/forgot/forgot.component';
 import { AskComponent } from './components/ask/ask.component';
 import { NewComponent } from './components/new/new.component';
+import { StoriesComponent } from './components/stories/stories.component';
+import { ItemComponent } from './components/item/item.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,14 @@ import { NewComponent } from './components/new/new.component';
     LoginComponent,
     ForgotComponent,
     AskComponent,
-    NewComponent
+    NewComponent,
+    StoriesComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
     FontAwesomeModule,
