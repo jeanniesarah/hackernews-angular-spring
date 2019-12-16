@@ -2,7 +2,7 @@
   <ol>
     <li *ngFor="let item of items; let i = index" class="post">
       Story #{{i}}
-      <item class="item-block" itemID="{{ i + 1 }}"></item>
+      <app-item class="item-block" itemID="{{ i + 1 }}"></app-item>
     </li>
   </ol>
   <div class="nav">
