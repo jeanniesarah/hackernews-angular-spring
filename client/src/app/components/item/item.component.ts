@@ -7,14 +7,11 @@ import {NewsApiService} from "../../news-api.service";
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-  @Input() itemID: number;
-  item;
+  @Input() item;
 
-  constructor(private newsAPIService: NewsApiService) {}
+  constructor() {}
 
   ngOnInit() {
-    this.newsAPIService.fetchItem(this.itemID).subscribe(data => {
-      this.item = data;
-    }, error => console.log('Could not load item' + this.itemID));
+
   }
 }
