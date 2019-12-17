@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule }    from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
+//import { AppRoutingModule } from './app-routing.module';
+import { routing } from "./app.routes";
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
@@ -18,6 +19,7 @@ import { NewComponent } from './components/new/new.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { ItemComponent } from './components/item/item.component';
 import { NewsApiService } from "./news-api.service";
+import { ItemCommentsComponent } from './item-comments/item-comments.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +34,12 @@ import { NewsApiService } from "./news-api.service";
     NewComponent,
     StoriesComponent,
     ItemComponent,
+    ItemCommentsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    //RoutingModule
+    routing,
     HttpClientModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
