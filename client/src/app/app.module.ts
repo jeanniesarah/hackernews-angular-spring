@@ -19,8 +19,10 @@ import { NewComponent } from './components/new/new.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { ItemComponent } from './components/item/item.component';
 import { NewsApiService } from "./news-api.service";
-import { ItemCommentsComponent } from './item-comments/item-comments.component';
+import { ItemCommentsComponent } from './components/item-comments/item-comments.component';
 import { JoinComponent } from './components/join/join.component';
+import { CommentTreeComponent } from './components/comment-tree/comment-tree.component';
+import { CommentComponent } from './components/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { JoinComponent } from './components/join/join.component';
     ItemComponent,
     ItemCommentsComponent,
     JoinComponent,
+    CommentTreeComponent,
+    CommentComponent,
   ],
   imports: [
     BrowserModule,

@@ -16,6 +16,11 @@ export class NewsApiService {
       .map(response => response);
   }
 
+  fetchComments(id: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/item/${id}`)
+      .map(response => response);
+  }
+
 /*  fetchItem(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/item/${id}.json`)
       .map(response => response);
