@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="hero-body">
         <div class="container">
           <h1 class="large-title">join us page works</h1>
+          <!-- TODO: add education funnel content -->
         </div>
       </div>
     </section>
