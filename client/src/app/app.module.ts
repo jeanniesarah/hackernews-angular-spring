@@ -23,6 +23,7 @@ import { ItemCommentsComponent } from './components/item-comments/item-comments.
 import { JoinComponent } from './components/join/join.component';
 import { CommentTreeComponent } from './components/comment-tree/comment-tree.component';
 import { CommentComponent } from './components/comment/comment.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CommentComponent } from './components/comment/comment.component';
     JoinComponent,
     CommentTreeComponent,
     CommentComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
