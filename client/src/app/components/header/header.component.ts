@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
           <div class="navbar">
             <a class="navbar-item" routerLink="/newest/1">new</a>
             <a class="navbar-item" routerLink="/ask/1">ask</a>
-            <a class="navbar-item" routerLink="blog">blog</a>
+            <a class="navbar-item" routerLink="submit">submit</a>
           </div>
           <div class="navbar-end">
             <a class="navbar-item" routerLink="login">login</a>

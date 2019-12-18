@@ -2,7 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { StoriesComponent} from "./components/stories/stories.component";
 import { ItemCommentsComponent } from "./item-comments/item-comments.component";
-import {BlogComponent} from "./components/blog/blog.component";
+import {SubmitComponent} from "./components/submit/submit.component";
 import {LoginComponent} from "./components/login/login.component";
 
 const routes: Routes = [
@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'ask/:page', component: StoriesComponent, data: {storiesType: 'ask'}},
   //{path: 'jobs/:page', component: StoriesComponent, data: {storiesType: 'jobs'}},
   {path: 'item/:id', component: ItemCommentsComponent},
-  {path: 'blog', component: BlogComponent},
+  {path: 'submit', component: SubmitComponent},
   {path: 'login', component: LoginComponent}
 ];
 

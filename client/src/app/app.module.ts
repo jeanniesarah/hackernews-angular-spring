@@ -10,7 +10,7 @@ import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-import { BlogComponent } from './components/blog/blog.component';
+import { SubmitComponent } from './components/submit/submit.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from "@angular/forms";
 import { ForgotComponent } from './components/forgot/forgot.component';
@@ -27,7 +27,7 @@ import { ItemCommentsComponent } from './item-comments/item-comments.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    BlogComponent,
+    SubmitComponent,
     LoginComponent,
     ForgotComponent,
     AskComponent,
