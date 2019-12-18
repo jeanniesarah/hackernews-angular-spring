@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { NewsApiService } from "../../news-api.service";
+import { NewsApiService } from "../news-api.service";
 
 @Component({
   selector: 'app-user',

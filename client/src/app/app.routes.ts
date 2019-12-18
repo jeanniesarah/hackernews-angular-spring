@@ -1,10 +1,10 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { StoriesComponent} from "./components/stories/stories.component";
-import { ItemCommentsComponent } from "./components/item-comments/item-comments.component";
-import {SubmitComponent} from "./components/submit/submit.component";
-import {LoginComponent} from "./components/login/login.component";
-import {JoinComponent} from "./components/join/join.component";
+import { StoriesComponent} from "./stories/stories.component";
+import { ItemCommentsComponent } from "./item-comments/item-comments.component";
+import {SubmitComponent} from "./submit/submit.component";
+import {LoginComponent} from "./login/login.component";
+import {JoinComponent} from "./join/join.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'news/1', pathMatch : 'full'},

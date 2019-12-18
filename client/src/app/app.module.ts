@@ -4,25 +4,23 @@ import { HttpClientModule }    from '@angular/common/http';
 import { routing } from "./app.routes";
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularMaterialModule } from './angular-material.module';
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
-import { SubmitComponent } from './components/submit/submit.component';
-import { LoginComponent } from './components/login/login.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { SubmitComponent } from './submit/submit.component';
+import { LoginComponent } from './login/login.component';
 import { FormsModule } from "@angular/forms";
-import { ForgotComponent } from './components/forgot/forgot.component';
-import { AskComponent } from './components/ask/ask.component';
-import { NewComponent } from './components/new/new.component';
-import { StoriesComponent } from './components/stories/stories.component';
-import { ItemComponent } from './components/item/item.component';
+import { ForgotComponent } from './forgot/forgot.component';
+import { AskComponent } from './ask/ask.component';
+import { NewComponent } from './new/new.component';
+import { StoriesComponent } from './stories/stories.component';
+import { ItemComponent } from './item/item.component';
 import { NewsApiService } from "./news-api.service";
-import { ItemCommentsComponent } from './components/item-comments/item-comments.component';
-import { JoinComponent } from './components/join/join.component';
-import { CommentTreeComponent } from './components/comment-tree/comment-tree.component';
-import { CommentComponent } from './components/comment/comment.component';
-import { UserComponent } from './components/user/user.component';
+import { ItemCommentsComponent } from './item-comments/item-comments.component';
+import { JoinComponent } from './join/join.component';
+import { CommentTreeComponent } from './comment-tree/comment-tree.component';
+import { CommentComponent } from './comment/comment.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -48,8 +46,6 @@ import { UserComponent } from './components/user/user.component';
     routing,
     HttpClientModule,
     BrowserAnimationsModule,
-    AngularMaterialModule,
-    FontAwesomeModule,
     FormsModule,
   ],
   providers: [NewsApiService],
