@@ -21,9 +21,9 @@ export class NewsApiService {
       .map(response => response);
   }
 
-/*  fetchItem(id: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/item/${id}.json`)
+  fetchUser(id: string): Observable<any> {
+    return this.http.get(`${this.baseUrl}/user/${id}`)
       .map(response => response);
-  }*/
+  }
 }
 
