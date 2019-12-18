@@ -20,6 +20,7 @@ import { StoriesComponent } from './components/stories/stories.component';
 import { ItemComponent } from './components/item/item.component';
 import { NewsApiService } from "./news-api.service";
 import { ItemCommentsComponent } from './item-comments/item-comments.component';
+import { JoinComponent } from './components/join/join.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ItemCommentsComponent } from './item-comments/item-comments.component';
     StoriesComponent,
     ItemComponent,
     ItemCommentsComponent,
+    JoinComponent,
   ],
   imports: [
     BrowserModule,

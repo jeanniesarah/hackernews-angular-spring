@@ -19,6 +19,7 @@ import { Component, OnInit } from '@angular/core';
                 url is required and needs to be at least 11 characters long
               </div>
             </div>
+            <!-- TODO: Add recaptcha -->
             <button type="submit" class="button is-danger is-medium">submit</button>
           </form>
         </div>
