@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {NewsApiService} from "../../news-api.service";
 
 @Component({
   selector: 'app-item',
@@ -6,11 +7,11 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-  @Input() itemID: number;
+  @Input() item;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-  }
 
+  }
 }
