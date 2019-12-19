@@ -2,17 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
+  <title>Luck</title>
   <base href="/">
-  <meta name="description" content="A description goes here" />
+  <meta name="description" content="A description goes here"/>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#d70202">
 </head>
 <body>
   <app-root></app-root>
-  <div class="app-loader">
-    <img class="logo" src="assets/img/angular-logo.png" alt="loading">
-  </div>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    }
+  </script>
 </body>
 </html>

@@ -21,6 +21,8 @@ import { JoinComponent } from './join/join.component';
 import { CommentTreeComponent } from './comment-tree/comment-tree.component';
 import { CommentComponent } from './comment/comment.component';
 import { UserComponent } from './user/user.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,7 @@ import { UserComponent } from './user/user.component';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [NewsApiService],
   bootstrap: [AppComponent]
