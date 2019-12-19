@@ -1,4 +1,4 @@
-package com.ghostblog.server;
+package com.ghost.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
