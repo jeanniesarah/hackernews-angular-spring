@@ -13,7 +13,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
-import static com.ghost.server.security.ApplicationUserPermission.COURSE_WRITE;
+import static com.ghost.server.security.ApplicationUserPermission.MEMBER_WRITE;
 import static com.ghost.server.security.ApplicationUserRole.*;
 
 @Configuration
@@ -34,9 +34,9 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/", "index", "/css/*", "/js/*").permitAll()
                 .antMatchers("/api/**").hasRole(MEMBER.name()) //admin, superadmin cant access the item api
-                .antMatchers(HttpMethod.DELETE,"/management/api/**").hasAuthority(COURSE_WRITE.getPermission()) //1:36
-                .antMatchers(HttpMethod.POST, "/management/api/**").hasAuthority(COURSE_WRITE.getPermission())
-                .antMatchers(HttpMethod.PUT, "/management/api/**").hasAuthority(COURSE_WRITE.getPermission())
+                .antMatchers(HttpMethod.DELETE,"/management/api/**").hasAuthority(MEMBER_WRITE.getPermission()) //1:36
+                .antMatchers(HttpMethod.POST, "/management/api/**").hasAuthority(MEMBER_WRITE.getPermission())
+                .antMatchers(HttpMethod.PUT, "/management/api/**").hasAuthority(MEMBER_WRITE.getPermission())
                 .antMatchers(HttpMethod.GET,"/management/api/**").hasAnyRole(ADMIN.name(), SUPERADMIN.name())
                 .anyRequest()
                 .authenticated()
