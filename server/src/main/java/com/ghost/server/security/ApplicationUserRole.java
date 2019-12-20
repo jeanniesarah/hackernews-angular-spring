@@ -9,8 +9,8 @@ import static com.ghost.server.security.ApplicationUserPermission.*;
 
 public enum ApplicationUserRole {
     MEMBER(Sets.newHashSet()),
-    SUPERADMIN(Sets.newHashSet(ITEM_READ, ITEM_WRITE, MEMBER_READ, MEMBER_WRITE)),
-    ADMIN(Sets.newHashSet(ITEM_READ, MEMBER_READ));
+    SUPERADMIN(Sets.newHashSet(ITEM_READ, ITEM_WRITE, NEWS_READ, NEWS_WRITE)),
+    ADMIN(Sets.newHashSet(ITEM_READ, NEWS_READ));
 
     private final Set<ApplicationUserPermission> permissions;
 

@@ -3,8 +3,8 @@ package com.ghost.server.security;
 public enum ApplicationUserPermission {
     ITEM_READ("item:read"),
     ITEM_WRITE("item:write"),
-    MEMBER_READ("member:read"),
-    MEMBER_WRITE("member:write");
+    NEWS_READ("news:read"),
+    NEWS_WRITE("news:write");
 
     private final String permission;
 
