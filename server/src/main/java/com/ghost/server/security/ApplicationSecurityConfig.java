@@ -12,6 +12,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
+
 import static com.ghost.server.security.ApplicationUserRole.*;
 
 @Configuration
@@ -29,14 +31,13 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                .csrf().disable() //TODO: revisit in section 5
+// TODO: implement logic for CSRF Protection 2:05
+//                .csrf().csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
+//                .and()
+                .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/", "index", "/css/*", "/js/*").permitAll()
                 .antMatchers("/api/**").hasRole(MEMBER.name())
-//                .antMatchers(HttpMethod.DELETE,"/management/api/**").hasAuthority(MEMBER_WRITE.getPermission()) //1:36
-//                .antMatchers(HttpMethod.POST, "/management/api/**").hasAuthority(MEMBER_WRITE.getPermission())
-//                .antMatchers(HttpMethod.PUT, "/management/api/**").hasAuthority(MEMBER_WRITE.getPermission())
-//                .antMatchers(HttpMethod.GET,"/management/api/**").hasAnyRole(ADMIN.name(), SUPERADMIN.name())
                 .anyRequest()
                 .authenticated()
                 .and()
