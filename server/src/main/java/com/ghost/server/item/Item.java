@@ -4,7 +4,8 @@ public class Item {
     private final Integer itemId;
     private final String itemTitle;
 
-    public Item(Integer itemId, String itemTitle) {
+    public Item(Integer itemId,
+                String itemTitle) {
         this.itemId = itemId;
         this.itemTitle = itemTitle;
     }
@@ -15,5 +16,13 @@ public class Item {
 
     public String getItemTitle(){
         return itemTitle;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "itemId=" + itemId +
+                ", itemTitle='" + itemTitle + '\'' +
+                '}';
     }
 }
