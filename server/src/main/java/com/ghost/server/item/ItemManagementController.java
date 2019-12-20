@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("management/api/v0/item")
+@RequestMapping("management/api/v0/items")
 public class ItemManagementController {
     private static final List<Item> ITEMS = Arrays.asList(
             new Item(1, "How to..."),
