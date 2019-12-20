@@ -13,8 +13,8 @@ import java.util.List;
 public class ItemController {
 
     private static final List<Item> ITEMS = Arrays.asList(
-            new Item(1, "How to..."),
-            new Item(2, "11 Best Ways"),
+            new Item(1, "How to"),
+            new Item(2, "Best Ways"),
             new Item(3, "Surprise Item")
     );
 
