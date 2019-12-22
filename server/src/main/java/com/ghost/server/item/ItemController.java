@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v0/item")
+@RequestMapping("api/v0/items")
 public class ItemController {
 
     private static final List<Item> ITEMS = Arrays.asList(
