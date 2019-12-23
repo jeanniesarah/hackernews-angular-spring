@@ -4,37 +4,28 @@ plugins {
 	id 'java'
 }
 
-group = 'com.ghostblog'
+group = 'com.ghost'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
-
-configurations {
-	developmentOnly
-	runtimeClasspath {
-		extendsFrom developmentOnly
-	}
-	compileOnly {
-		extendsFrom annotationProcessor
-	}
-}
 
 repositories {
 	mavenCentral()
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	// https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
-	compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
-	compileOnly 'org.projectlombok:lombok'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
-	runtimeOnly 'org.postgresql:postgresql'
-	annotationProcessor 'org.projectlombok:lombok'
+	compile group: 'com.google.guava', name: 'guava', version: '28.1-jre'
+	compile 'io.jsonwebtoken:jjwt-api:0.10.7'
+	runtime 'io.jsonwebtoken:jjwt-impl:0.10.7',
+			// Uncomment the next line if you want to use RSASSA-PSS (PS256, PS384, PS512) algorithms:
+			//'org.bouncycastle:bcprov-jdk15on:1.60',
+			'io.jsonwebtoken:jjwt-jackson:0.10.7'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	testImplementation 'org.springframework.security:spring-security-test'
 }
 
 test {
