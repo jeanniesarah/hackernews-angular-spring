@@ -12,6 +12,7 @@ public class TemplateController {
     public String getLogin(){
         return "login";
     }
+
     @GetMapping("news")
     public String getNews(){
         return "news";
